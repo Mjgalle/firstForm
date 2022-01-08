@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="descreption" content="blank form" />
+    <meta name="descreption" content="form" />
+    <meta name="author" content="Bernardo Gallegos" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <div class="container">
+      <label for="fname">First Name: *</label>
+      <input type="text" id="fname" name="fname" />
+
+      <label for="lname">Last Name: *</label>
+      <input type="text" id="lname" name="lname" />
+
+      <label for="email">Email Address: *</label>
+      <input type="text" id="email" name="email" />
+
+      <label for="password">Password: *</label>
+      <input type="password" id="password" name="password" />
+
+      <label for="password">Confirm Password: *</label>
+      <input type="password" id="password" name="password" />
+
+      <label for="Birthday">Birthday: </label>
+      <input type="date" name="dob" />
+    </div>
+    <p>Gender Identity:</p>
+    <input type="radio" id="male" name="gender_type" value="Male" />
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender_type" value="Female" />
+    <label for="female">Female</label>
+
+    <input type="radio" id="non-binary" name="gender_type" value="Non-Binary" />
+    <label for="non-binary">Non-Binary</label>
+
+    <input type="radio" id="no-answer" name="no-answer" value="no-answer" />
+    <label for="no-answer">I prefer not to answer</label>
+
+    <h4></h4>
+    <p>A short description about myself:</p>
+    <textarea id="descreption" name="descreption" rows="4" cols="50"></textarea>
+    <h4></h4>
+    <label for="language">Favorite Language: </label>
+    <select name="language" id="language">
+      <option value="javascript">JavaScript</option>
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+      <option value="c++">C++</option>
+    </select>
+    <h4></h4>
+    <input type="checkbox" id="checkbox" name="checkbox" value="check" />
+    <label for="checkbox"
+      >Yes, I would like to recive periodic email updates</label
+    >
+    <h4></h4>
+    <input type="submit" value="Create Account" />
+    <h4></h4>
+    <p>* Indicates a required field</p>
+  </body>
+</html>
